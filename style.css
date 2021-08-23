@@ -1,0 +1,89 @@
+/*CSS RESET*/
+*{
+    margin:0;
+    padding:0;
+}
+/*CSS VARIABLES*/
+:root{
+    --navbar-height:59px;
+}
+/* NAVIGATION BAR*/
+#navbar{
+    display: flex;
+    align-items: center;
+}
+/*Navigatin bar: logo and image*/
+#logo{
+    margin:10px 34px;
+}
+#logo img{
+    height: 60px;
+    margin: 7px 9px;
+}
+
+/*Navigation bar:list styling*/
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 18px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/*HOME SECTION*/
+#home{
+    display:flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+
+    content: "";
+    position: absolute;
+    background:url("vegetables.jpg");
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color:white;
+    text-align: center;
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+/*utility classes*/
+.h-primary{
+    font-size:3.8rem;
+    padding:12px;
+}
+
