@@ -67,6 +67,8 @@
     content: "";
     position: absolute;
     background:url("vegetables.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
     width: 100%;
     z-index: -1;
